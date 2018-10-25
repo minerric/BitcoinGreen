@@ -1,16 +1,16 @@
 #!/bin/bash
 
 TMP_FOLDER=$(mktemp -d)
-CONFIG_FILE='bitcoingreen.conf'
-CONFIGFOLDER='/root/.bitcoingreen'
-COIN_DAEMON='bitcoingreend'
-COIN_CLI='bitcoingreen-cli'
+CONFIG_FILE='bltg.conf'
+CONFIGFOLDER='/root/.bltg'
+COIN_DAEMON='bltgd'
+COIN_CLI='bltg-cli'
 COIN_PATH='/usr/local/bin/'
-COIN_TGZ='https://github.com/bitcoingreen/bitcoingreen/releases/download/v1.3.0/bitcoingreen-1.3.0-x86_64-linux-gnu.tar.gz'
+COIN_TGZ='https://github.com/Block-Logic-Technology-Group/bltg/archive/v2.0.0.0.tar.gz'
 COIN_ZIP=$(echo $COIN_TGZ | awk -F'/' '{print $NF}')
-COIN_NAME='BitcoinGreen'
-COIN_PORT=9333
-RPC_PORT=9332
+COIN_NAME='BLTG'
+COIN_PORT=17127
+RPC_PORT=17128
 
 NODEIP=$(curl -s4 api.ipify.org)
 
@@ -125,21 +125,7 @@ externalip=$NODEIP:$COIN_PORT
 masternodeprivkey=$COINKEY
 
 #Nodes
-addnode=51.15.198.252
-addnode=51.15.206.123
-addnode=51.15.66.234
-addnode=51.15.86.224
-addnode=51.15.89.27
-addnode=51.15.57.193
-addnode=134.255.232.212
-addnode=185.239.238.237
-addnode=185.239.238.240
-addnode=134.255.232.212
-addnode=207.148.26.77
-addnode=207.148.19.239
-addnode=108.61.103.123
-addnode=185.239.238.89
-addnode=185.239.238.92
+
 EOF
 }
 
