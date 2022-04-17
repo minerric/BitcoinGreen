@@ -1,5 +1,5 @@
 ## BLTG
-Shell script to install a BLTG Masternode on a Linux server running Ubuntu 16.04. Use it on your own risk.
+Shell script to install a BLTG Masternode on a Linux server running Ubuntu 18.04. Use it at your own risk.
 
 ***
 
